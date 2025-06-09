@@ -1,7 +1,7 @@
 class Solution {
     public int removeDuplicates(int[] nums) 
     {
-        //DAY3
+        //DAY4
         int k = 1;
         int n = 0;
         int c = nums[0];
