@@ -2,29 +2,31 @@ class Solution
 {
     public int lengthOfLongestSubstring(String s) 
     {   //DAY 8
-        /*MySolution*
+        //*MySolution*
         int low =0;
         int high =0;
         ArrayList<Character> sub = new ArrayList<>();
         int currl = 0;
         int maxl = 0;
-        for(high=0;high<s.length();high++)
+        while(high<s.length())
         {
             if(!sub.contains(s.charAt(high)))
             {
                 sub.add(s.charAt(high));
+                high++;
+                maxl = Math.max(maxl,sub.size());
             }
             else
             {
-                currl = sub.size();
+                //currl = sub.size();
                 sub.remove(Character.valueOf(s.charAt(low)));
                 //sub.add(s.charAt(high));
                 low++;
             }
-            maxl = Math.max(currl,maxl);
+            
         }
-        return maxl;*/
-        int low =0;
+        return maxl;
+        /*int low =0;
         int high =0;
         ArrayList<Character> sub = new ArrayList<>();
         int maxl =0;
@@ -42,6 +44,6 @@ class Solution
                 low++;
             }
         }
-        return maxl;
+        return maxl;*/
     }
 }
