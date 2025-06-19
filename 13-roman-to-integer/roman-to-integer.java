@@ -4,7 +4,6 @@ class Solution
     {
         //DAY 14
         Map<Character, Integer> m = new HashMap<>();
-        
         m.put('I', 1);
         m.put('V', 5);
         m.put('X', 10);
@@ -12,9 +11,7 @@ class Solution
         m.put('C', 100);
         m.put('D', 500);
         m.put('M', 1000);
-        
         int ans = 0;
-        
         for (int i = 0; i < s.length(); i++) {
             if (i < s.length() - 1 && m.get(s.charAt(i)) < m.get(s.charAt(i + 1))) {
                 ans -= m.get(s.charAt(i));
@@ -22,7 +19,6 @@ class Solution
                 ans += m.get(s.charAt(i));
             }
         }
-        
         return ans;
     }
 }
