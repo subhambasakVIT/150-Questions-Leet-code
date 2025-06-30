@@ -2,7 +2,7 @@ class Solution
 {
     public int searchInsert(int[] nums, int target) 
     {
-        //DAY22
+        //DAY21
         int p=0;
         if(nums[nums.length-1]<target)
         {
