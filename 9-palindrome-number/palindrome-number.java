@@ -2,7 +2,7 @@ class Solution
 {
     public boolean isPalindrome(int x) 
     {
-        //DAY23
+        //DAY22
         int num = x;
         int s =0;
         while(num>0)
