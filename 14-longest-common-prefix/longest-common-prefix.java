@@ -2,7 +2,7 @@ class Solution
 {
     public String longestCommonPrefix(String[] strs) 
     {
-        //DAY25
+        //DAY26
         if (strs == null || strs.length == 0) return "";
 
         String prefix = strs[0];
