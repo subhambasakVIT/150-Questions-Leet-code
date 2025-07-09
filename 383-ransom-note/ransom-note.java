@@ -15,7 +15,6 @@ class Solution
             }
             letters[c - 'a']--;
         }
-
         return true;
     }
 }
